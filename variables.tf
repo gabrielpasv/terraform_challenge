@@ -9,7 +9,7 @@ variable aws_account_ids {
 }
 
 variable vpc_terraform_cidr {
-  default     = "10.0.0.0/24"
+  default     = "10.0.0.0/16"
   type        = "string"
   description = "IP CIDR Range for VPC_Terraform."
 }
