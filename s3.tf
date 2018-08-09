@@ -25,6 +25,6 @@ POLICY
 resource "aws_s3_bucket_object" "object" {
   bucket = "${aws_s3_bucket.s3_terraform.bucket}"
   key = "index.html"
-  source = "index.html"
+  source = "docker/index.html"
   content_type = "text/html"
 }
